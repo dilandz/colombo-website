@@ -1,0 +1,135 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #ffffff; /* Light grey background for the whole site */
+  padding: 20px 20px; /* Pushes the grey container away from the screen edges */
+  display: flex;
+  justify-content: center; /* Centers the grey box on the screen */
+}
+
+/* 2. The Inner Grey Container */
+.content-wrapper {
+  background-color: #f4f4f4; /* The light grey background from your wireframe */
+  width: 100%;
+  padding: 10px;
+  /* Optional: Adding a tiny shadow makes the grey box pop off the white background */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.global-nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff6600; /* Bold orange accent for the brand name */
+}
+/* 3. The Floating Nav Bar */
+.global-nav {
+  background-color: #ffffff; /* Black background to match your theme */
+  width: 70%; /* Makes it smaller than the full width to look like it's floating */
+  margin: 10px auto 50px auto; /* Centers it and adds space below */
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-items: center;
+  border-radius: 50px; /* Gives it that pill-shape floating look */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.nav-links a {
+  color: #121212; /* Black text for the links */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 25px; /* CRITICAL: This creates the invisible "box" around the text */
+  border-radius: 25px; /* Gives the hover box rounded, pill-like corners */
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease; /* Smoothly fades the colors */
+}
+
+.nav-links a:hover {
+  background-color: #ff6600; /* Links turn orange when the mouse hovers over them */
+  color: #ffffff;
+}
+
+/* Hero Section */
+.hero-section {
+  height: 95vh;
+  /* The linear-gradient below adds a dark tint over your image so the white text stands out */
+  background-image:
+    linear-gradient(rgba(40, 40, 40, 0.7), rgba(18, 18, 18, 0.7)),
+    url("./Assets/Colombo.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+
+.hero-content {
+    flex: 1; /* Takes up all the remaining space below the nav bar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Puts the text dead center */
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: #cccccc; /* Light grey subtext */
+}
+
+/* Buttons */
+.cta-button {
+  background-color: #ff6600; /* The striking orange button */
+  color: #ffffff; /* White text on the button */
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  display: inline-block;
+}
+
+.cta-button:hover {
+  background-color: #cc5200; /* A slightly darker orange for the hover effect */
+}
+
+/* Intro Section */
+.intro-section {
+  background-color: #ffffff; /* Pure white background for the text area */
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+  line-height: 1.8;
+  border: 1px solid #e0e0e0; /* Very subtle grey border */
+  border-radius: 8px; /* Slightly rounded corners */
+}
+
+.intro-section h2 {
+  margin-bottom: 20px;
+  color: #121212; /* Black header text */
+}
+
+/* Footer */
+footer {
+  color: #121212; 
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
