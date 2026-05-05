@@ -7,60 +7,54 @@
 }
 
 body {
-  background-color: #ffffff; /* Light grey background for the whole site */
-  padding: 20px 20px; /* Pushes the grey container away from the screen edges */
+  background-color: #ffffff; 
+  padding: 20px 20px; 
   display: flex;
-  justify-content: center; /* Centers the grey box on the screen */
+  justify-content: center; 
 }
 
-/* 2. The Inner Grey Container */
+
 .content-wrapper {
-  background-color: #f4f4f4; /* The light grey background from your wireframe */
+  background-color: #f4f4f4; 
   width: 100%;
   padding: 10px;
-  /* Optional: Adding a tiny shadow makes the grey box pop off the white background */
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
-.global-nav .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #ff6600; /* Bold orange accent for the brand name */
-}
-/* 3. The Floating Nav Bar */
+
 .global-nav {
-  background-color: #ffffff; /* Black background to match your theme */
-  width: 70%; /* Makes it smaller than the full width to look like it's floating */
-  margin: 10px auto 50px auto; /* Centers it and adds space below */
+  background-color: #ffffff; 
+  width: 70%; 
+  margin: 10px auto 50px auto; 
   padding: 15px 30px;
   display: flex;
   justify-content: center;
   gap: 15px;
   align-items: center;
-  border-radius: 50px; /* Gives it that pill-shape floating look */
+  border-radius: 50px; 
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
 .nav-links a {
-  color: #121212; /* Black text for the links */
+  color: #121212; 
   text-decoration: none;
   font-weight: bold;
-  padding: 10px 25px; /* CRITICAL: This creates the invisible "box" around the text */
-  border-radius: 25px; /* Gives the hover box rounded, pill-like corners */
+  padding: 10px 25px; 
+  border-radius: 25px; 
   transition:
     background-color 0.3s ease,
-    color 0.3s ease; /* Smoothly fades the colors */
+    color 0.3s ease; 
 }
 
 .nav-links a:hover {
-  background-color: #ff6600; /* Links turn orange when the mouse hovers over them */
+  background-color: #ff6600; 
   color: #ffffff;
 }
 
 /* Hero Section */
 .hero-section {
   height: 95vh;
-  /* The linear-gradient below adds a dark tint over your image so the white text stands out */
+  /* The linear-gradient below adds a dark tint over your image to stand out the white text */
   background-image:
     linear-gradient(rgba(40, 40, 40, 0.7), rgba(18, 18, 18, 0.7)),
     url("./Assets/Colombo.jpeg");
@@ -73,10 +67,10 @@ body {
 
 
 .hero-content {
-    flex: 1; /* Takes up all the remaining space below the nav bar */
+    flex: 1; 
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Puts the text dead center */
+    justify-content: center; 
     align-items: center;
     text-align: center;
 }
@@ -89,13 +83,13 @@ body {
 .hero-content p {
   font-size: 1.5rem;
   margin-bottom: 30px;
-  color: #cccccc; /* Light grey subtext */
+  color: #cccccc; 
 }
 
 /* Buttons */
 .cta-button {
-  background-color: #ff6600; /* The striking orange button */
-  color: #ffffff; /* White text on the button */
+  background-color: #ff6600; 
+  color: #ffffff; 
   padding: 15px 30px;
   text-decoration: none;
   font-size: 1.2rem;
@@ -106,25 +100,93 @@ body {
 }
 
 .cta-button:hover {
-  background-color: #cc5200; /* A slightly darker orange for the hover effect */
+  background-color: #cc5200; 
+}
+
+/* --- STATS SECTION --- */
+.stats-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 20px;
+    max-width: 1200px;
+    margin: 10px auto 40px auto;
+    padding: 20px 20px;
+  
+}
+
+.stat-box {
+    background-color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1); 
+    /* border-bottom: 4px solid #868686;  */
+    transition: transform 0.3s ease;
+}
+
+.stat-box:hover {
+    transform: translateY(-10px); 
+}
+
+.stat-number {
+    font-size: 2.0rem;
+    color: #000000; 
+    margin-bottom: 5px;
+    
+}
+
+.stat-label {
+    color: #666666; 
+    font-size: 1rem;
+    text-transform: uppercase; 
+    letter-spacing: 1px;
 }
 
 /* Intro Section */
 .intro-section {
-  background-color: #ffffff; /* Pure white background for the text area */
+  background-color: #ffffff; 
   padding: 60px 20px;
-  max-width: 800px;
+  max-width: 1200px;
   margin: 40px auto;
   text-align: center;
   line-height: 1.8;
-  border: 1px solid #e0e0e0; /* Very subtle grey border */
-  border-radius: 8px; /* Slightly rounded corners */
+  border: 1px solid #e0e0e0; 
+  border-radius: 8px; 
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
 
 .intro-section h2 {
   margin-bottom: 20px;
-  color: #121212; /* Black header text */
+  color: #121212; 
 }
+
+.intro-text {
+    flex: 1; 
+    color: #333333;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.intro-text h2 {
+    margin-bottom: 20px;
+    color: #121212;
+    font-size: 2rem;
+    
+}
+
+.intro-image {
+    flex: 1; 
+}
+
+.intro-image img {
+    width: 100%; 
+    border-radius: 8px; 
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1); 
+}
+
+
 
 /* Footer */
 footer {
