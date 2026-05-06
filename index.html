@@ -1,42 +1,68 @@
-<!-- Dilan De Zilva || 05/05/2025 -->
-<!-- The website is about city of sri lanka know an Colombo, this includes it states along with
-restaurants, malls, hotels and its history. -->
-<!-- This page is main page of the site showing the overview of colombo city -->
+<!-- 
+Dilan De Zilva
+05/05/2025
+The website is about city of sri lanka know an Colombo, this includes it stats along with
+restaurants, malls, hotels and its history.
+This page is main page of the site showing the overview of colombo city 
+-->
 
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--  -->
+    <meta
+      name="description"
+      content="Discover the vibrant heart of Sri Lanka! Your ultimate guide to the best places, food, hotels, and hidden gems in Colombo. Start planning your trip today." />
     <title>Discover Colombo | Travel Guide</title>
-    <!--  -->
     <link rel="stylesheet" href="styles.css" />
+    <!-- Nav bar icon from online library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   </head>
   <body>
     <div class="content-wrapper">
-      <!-- HERO SECTION -->
+      <!-- Hero Section -->
       <header class="hero-section">
-        <!-- GLOBAL NAVIGATION -->
-        <nav class="global-nav transparent-view">
-          <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="places.html">Places</a>
-            <a href="malls.html">Malls</a>
-            <a href="hotels.html">Hotels</a>
-            <a href="restaurants.html">Restaurants</a>
-            <a href="history.html">History</a>
+        <!-- Global Navigation -->
+        <nav class="global-nav">
+          <div class="nav-links" id="nav-links">
+            <a href="index.html" class="active">
+              <i class="fa-solid fa-house"></i>
+              <span class="nav-text">Home</span>
+            </a>
+            <a href="places.html">
+              <i class="fa-solid fa-map-location-dot"></i>
+              <span class="nav-text">Places</span>
+            </a>
+            <a href="malls.html">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <span class="nav-text">Malls</span>
+            </a>
+            <a href="hotels.html">
+              <i class="fa-solid fa-bed"></i>
+              <span class="nav-text">Hotels</span>
+            </a>
+            <a href="restaurants.html">
+              <i class="fa-solid fa-utensils"></i>
+              <span class="nav-text">Dining</span>
+            </a>
           </div>
         </nav>
+
         <div class="hero-content">
-          <h1 id="greeting-text">Welcome to Colombo, Good Evening</h1>
+          <h1>
+            <span id="animation-text"></span>
+            <span id="greeting-message"></span>
+          </h1>
           <p>The commercial capital and beating heart of Sri Lanka.</p>
-          <a href="places.html" class="cta-button">Start Exploring</a>
+          <a href="#stats" class="cta-button">Start Exploring</a>
         </div>
       </header>
 
-      <!-- STATS SECTION -->
-      <section class="stats-section">
+      <!-- Stats Section -->
+      <section class="stats-section" id="stats">
         <div class="stat-box">
           <h3 class="stat-number">30°C</h3>
           <p class="stat-label">Avg Temperature</p>
@@ -63,7 +89,7 @@ restaurants, malls, hotels and its history. -->
         </div>
       </section>
 
-      <!-- INTRODUCTION -->
+      <!-- Introduction -->
       <section class="intro-section">
         <div class="intro-text">
           <h2>Experience the Art of the West Coast</h2>
@@ -86,39 +112,50 @@ restaurants, malls, hotels and its history. -->
         </div>
       </section>
 
-      <section class="must-visit section">
-        <h2>Must-Visit Neighborhoods</h2>
-        <ul>
-          <li>
-            <b>Fort:</b> The historic center featuring the Dutch Hospital and
-            colonial architecture.
-          </li>
-          <li>
-            <b>Pettah:</b> The famous open-air market for spices, textiles, and
-            electronics.
-          </li>
-          <li>
-            <b>Cinnamon Gardens (Colombo 07):</b> The upscale residential area
-            with wide, leafy streets.
-          </li>
-          <li>
-            <b>lave Island:</b> A trendy hub for cafes and the Beira Lake.
-          </li>
-        </ul>
+      <!-- List Section -->
+      <section class="list-section">
+        <div class="list-container">
+          <h3>Must-Visit Neighborhoods</h3>
+          <ul class="custom-list">
+            <li>
+              <b>Fort:</b> The historic center featuring the Dutch Hospital and
+              colonial architecture.
+            </li>
+            <li>
+              <b>Pettah:</b> The famous open-air market for spices, textiles,
+              and electronics.
+            </li>
+            <li>
+              <b>Cinnamon Gardens (Colombo 07):</b> The upscale residential area
+              with wide, leafy streets.
+            </li>
+            <li>
+              <b>Slave Island:</b> A trendy hub for cafes and the Beira Lake.
+            </li>
+          </ul>
+        </div>
 
-        <h2>Top 5 Things to Do</h2>
-        <ol>
-          <li>Watch the sunset at Galle Face Green while eating Isso Wade.</li>
-          <li>Take a boat ride on the Beira Lake near Seema Malaka temple.</li>
-          <li>
-            Visit the National Museum of Colombo to see ancient royal regalia.
-          </li>
-          <li>Explore the Jami Ul-Alfar Mosque (The Red Mosque) in Pettah.</li>
-          <li>Enjoy a high tea at the historic Galle Face Hotel.</li>
-        </ol>
+        <div class="list-container">
+          <h3>Top 5 Things to Do</h3>
+          <ul class="custom-list">
+            <li>
+              Watch the sunset at Galle Face Green while eating Isso Wade.
+            </li>
+            <li>
+              Take a boat ride on the Beira Lake near Seema Malaka temple.
+            </li>
+            <li>
+              Visit the National Museum of Colombo to see ancient royal regalia.
+            </li>
+            <li>
+              Explore the Jami Ul-Alfar Mosque (The Red Mosque) in Pettah.
+            </li>
+            <li>Enjoy a high tea at the historic Galle Face Hotel.</li>
+          </ul>
+        </div>
       </section>
 
-      <!-- GLOBAL FOOTER -->
+      <!-- Global Footer -->
       <footer>
         <p>
           &copy; 2026 Discover Colombo. Built for TECH4200. By Dilan De Zilva
@@ -126,6 +163,6 @@ restaurants, malls, hotels and its history. -->
       </footer>
     </div>
 
-    <script src="js/scripts.js"></script>
+    <script src="scripts.js"></script>
   </body>
 </html>
