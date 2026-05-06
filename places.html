@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore top tourist attractions in Colombo, from the historic Gangaramaya Temple to the beautiful Galle Face Green. See what you can't miss in the city." />
+    <title>Places to Visit | Discover Colombo</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <!-- Global Navigation -->
+      <nav class="global-nav">
+        <div class="nav-links" id="nav-links">
+          <a href="index.html" class="active">
+            <i class="fa-solid fa-house"></i>
+            <span class="nav-text">Home</span>
+          </a>
+          <a href="places.html">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <span class="nav-text">Places</span>
+          </a>
+          <a href="malls.html">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="nav-text">Malls</span>
+          </a>
+          <a href="hotels.html">
+            <i class="fa-solid fa-bed"></i>
+            <span class="nav-text">Hotels</span>
+          </a>
+          <a href="restaurants.html">
+            <i class="fa-solid fa-utensils"></i>
+            <span class="nav-text">Dining</span>
+          </a>
+        </div>
+      </nav>
+      <header class="page-header">
+        <h1>Must-Visit Places</h1>
+        <p>Explore the historic landmarks and cultural hubs of the city.</p>
+      </header>
+
+      <main>
+
+        <div class="controls-container">
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="historic">Historic</button>
+            <button class="filter-btn" data-filter="religious">Religious</button>
+            <button class="filter-btn" data-filter="shopping">Shopping</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+          </div>
+          
+          <div class="sort-dropdown">
+            <select id="sort-select">
+              <option value="default">Sort: Default</option>
+              <option value="asc">Sort: A - Z</option>
+              <option value="desc">Sort: Z - A</option>
+            </select>
+          </div>
+        </div>
+
+
+
+        <div class="card-grid">
+          <div class="place-card">
+            <img src="assets/temple.jpg" alt="Gangaramaya Temple" />
+            <div class="card-info">
+              <h3>Gangaramaya Temple</h3>
+              <p>
+                One of the most important temples in Colombo, featuring a mix of
+                modern architecture and cultural essence.
+              </p>
+            </div>
+          </div>
+
+          <div class="place-card">
+            <img src="assets/galle-face.jpg" alt="Galle Face Green" />
+            <div class="card-info">
+              <h3>Galle Face Green</h3>
+              <p>
+                A half-kilometre promenade stretching along the coast, perfect
+                for sunset walks and authentic street food.
+              </p>
+            </div>
+          </div>
+
+          <div class="place-card">
+            <img src="assets/lotus tower.jpg" alt="Lotus Tower" />
+            <div class="card-info">
+              <h3>Colombo Lotus Tower</h3>
+              <p>
+                The tallest self-supported structure in South Asia, offering
+                breathtaking panoramic views of the entire city.
+              </p>
+            </div>
+          </div>
+
+          <div class="place-card">
+            <img src="assets/pettah.jpg" alt="Pettah Floating Market" />
+            <div class="card-info">
+              <h3>Pettah Floating Market</h3>
+              <p>
+                A vibrant, bustling market built on the water, ideal for
+                shopping local crafts and electronics.
+              </p>
+            </div>
+          </div>
+
+          <div class="place-card">
+            <img
+              src="assets/national-museum.jpg"
+              alt="National Museum of Colombo" />
+            <div class="card-info">
+              <h3>National Museum of Colombo</h3>
+              <p>
+                The largest museum in Sri Lanka, housing ancient royal regalia
+                and telling the story of the island's rich heritage.
+              </p>
+            </div>
+          </div>
+
+          <div class="place-card">
+            <img src="assets/park.jpg" alt="Viharamahadevi Park" />
+            <div class="card-info">
+              <h3>Viharamahadevi Park</h3>
+              <p>
+                A sprawling, lush green oasis in the heart of the city featuring
+                huge trees, a serene lake, and walking trails.
+              </p>
+            </div>
+          </div>
+
+          <div class="place-card">
+            <img
+              src="assets/independence-square.jpg"
+              alt="Independence Memorial Hall" />
+            <div class="card-info">
+              <h3>Independence Memorial Hall</h3>
+              <p>
+                A stunning stone monument built to commemorate the country's
+                independence, surrounded by peaceful gardens.
+              </p>
+            </div>
+          </div>
+
+          <div class="place-card">
+            <img src="assets/red-mosque.jpg" alt="Jami Ul-Alfar Mosque" />
+            <div class="card-info">
+              <h3>Jami Ul-Alfar Mosque</h3>
+              <p>
+                Known as the Red Mosque, this architectural marvel features
+                striking red-and-white candy-striped brickwork.
+              </p>
+            </div>
+          </div>
+
+          <div class="place-card">
+            <img
+              src="assets/dutch-hospital.jpg"
+              alt="Dutch Hospital Precinct" />
+            <div class="card-info">
+              <h3>Dutch Hospital Precinct</h3>
+              <p>
+                A beautifully restored 17th-century colonial hospital that is
+                now home to high-end cafes, restaurants, and boutiques.
+              </p>
+            </div>
+          </div>
+
+          <div class="place-card">
+            <img src="assets/seema-malaka.jpg" alt="Seema Malaka" />
+            <div class="card-info">
+              <h3>Seema Malaka</h3>
+              <p>
+                A tranquil, picturesque meditation center designed by Geoffrey
+                Bawa, floating on the calm waters of Beira Lake.
+              </p>
+            </div>
+          </div>
+
+          <div class="place-card">
+            <img src="assets/mount-lavinia.jpg" alt="Mount Lavinia Beach" />
+            <div class="card-info">
+              <h3>Mount Lavinia Beach</h3>
+              <p>
+                Just south of the city center, this famous stretch of golden
+                sand is perfect for swimming, seafood, and sunset views.
+              </p>
+            </div>
+          </div>
+
+          <div class="place-card">
+            <img
+              src="assets/old-parliament.jpg"
+              alt="Old Parliament Building" />
+            <div class="card-info">
+              <h3>Old Parliament Building</h3>
+              <p>
+                A grand Neo-Baroque building facing the ocean, serving as a
+                reminder of Colombo's colonial political history.
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Global Footer -->
+      <footer>
+        <p>
+          &copy; 2026 Discover Colombo. Built for TECH4200. By Dilan De Zilva
+        </p>
+      </footer>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
