@@ -1,18 +1,22 @@
+//This lines makes the code wait until the full html is loaded to the screen so it won't result
+//any errors
 document.addEventListener("DOMContentLoaded", () => {
-  // Function animate the welcome text into typewriter format displaying
-  // each letter at a time and when finished it displays the greeting message
   const displayElement = document.getElementById("animation-text");
 
   if (displayElement) {
     const displayText = "Welcome to Colombo, ";
     let charIndex = 0;
+
+    // Function animate the welcome text into typewriter format displaying
+    // each letter at a time and when finished it displays the greeting message
     function typeWriter() {
       if (charIndex < displayText.length) {
         displayElement.innerHTML += displayText.charAt(charIndex);
         charIndex++;
-        setTimeout(typeWriter, 100); // Speed of typing in milliseconds
+        setTimeout(typeWriter, 100);
       } else {
-        displayGreeting(); // run the display greet function after displaying the welcome text
+        //Run the display greet function after displaying the welcome text
+        displayGreeting();
       }
     }
 
@@ -43,8 +47,37 @@ document.addEventListener("DOMContentLoaded", () => {
     typeWriter();
   }
 
+  // Places Page JavaScript for Category Filter
+  const grid = document.getElementById("places-grid");
+  const filterButtons = document.querySelectorAll(".filter-btn");
 
+  if (grid && filterButtons.length > 0) {
+    // Grab all the cards
+    let cards = document.querySelectorAll(".place-card");
 
-  // Places Page JavaScript
-  
+    // Listen for clicks on any filter button
+    filterButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        // 1. Visual update: Move the orange 'active' color to the clicked button
+        filterButtons.forEach((btn) => btn.classList.remove("active"));
+        button.classList.add("active");
+
+        // 2. Logic: Find out which category was clicked
+        const currentFilter = button.getAttribute("data-filter");
+
+        // 3. Filter: Loop through every card to see if it matches
+        cards.forEach((card) => {
+          const category = card.getAttribute("data-category");
+
+          // If filter is 'all' OR it matches the card's category, show it
+          if (currentFilter === "all" || currentFilter === category) {
+            card.classList.remove("hidden");
+          } else {
+            // Otherwise, hide it
+            card.classList.add("hidden");
+          }
+        });
+      });
+    });
+  }
 });

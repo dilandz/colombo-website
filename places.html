@@ -17,11 +17,11 @@
       <!-- Global Navigation -->
       <nav class="global-nav">
         <div class="nav-links" id="nav-links">
-          <a href="index.html" class="active">
+          <a href="index.html" >
             <i class="fa-solid fa-house"></i>
             <span class="nav-text">Home</span>
           </a>
-          <a href="places.html">
+          <a href="places.html" class="active">
             <i class="fa-solid fa-map-location-dot"></i>
             <span class="nav-text">Places</span>
           </a>
@@ -45,29 +45,20 @@
       </header>
 
       <main>
-
-        <div class="controls-container">
+       
           <div class="filter-buttons">
             <button class="filter-btn active" data-filter="all">All</button>
             <button class="filter-btn" data-filter="historic">Historic</button>
-            <button class="filter-btn" data-filter="religious">Religious</button>
+            <button class="filter-btn" data-filter="religious">
+              Religious
+            </button>
             <button class="filter-btn" data-filter="shopping">Shopping</button>
             <button class="filter-btn" data-filter="nature">Nature</button>
           </div>
-          
-          <div class="sort-dropdown">
-            <select id="sort-select">
-              <option value="default">Sort: Default</option>
-              <option value="asc">Sort: A - Z</option>
-              <option value="desc">Sort: Z - A</option>
-            </select>
-          </div>
-        </div>
+    
 
-
-
-        <div class="card-grid">
-          <div class="place-card">
+        <div class="card-grid" id="places-grid">
+          <div class="place-card" data-category="religious">
             <img src="assets/temple.jpg" alt="Gangaramaya Temple" />
             <div class="card-info">
               <h3>Gangaramaya Temple</h3>
@@ -78,7 +69,7 @@
             </div>
           </div>
 
-          <div class="place-card">
+          <div class="place-card" data-category="nature">
             <img src="assets/galle-face.jpg" alt="Galle Face Green" />
             <div class="card-info">
               <h3>Galle Face Green</h3>
@@ -89,7 +80,7 @@
             </div>
           </div>
 
-          <div class="place-card">
+          <div class="place-card" data-category="historic">
             <img src="assets/lotus tower.jpg" alt="Lotus Tower" />
             <div class="card-info">
               <h3>Colombo Lotus Tower</h3>
@@ -100,7 +91,7 @@
             </div>
           </div>
 
-          <div class="place-card">
+          <div class="place-card" data-category="shopping">
             <img src="assets/pettah.jpg" alt="Pettah Floating Market" />
             <div class="card-info">
               <h3>Pettah Floating Market</h3>
@@ -111,7 +102,7 @@
             </div>
           </div>
 
-          <div class="place-card">
+          <div class="place-card" data-category="historic">
             <img
               src="assets/national-museum.jpg"
               alt="National Museum of Colombo" />
@@ -124,7 +115,7 @@
             </div>
           </div>
 
-          <div class="place-card">
+          <div class="place-card" data-category="nature">
             <img src="assets/park.jpg" alt="Viharamahadevi Park" />
             <div class="card-info">
               <h3>Viharamahadevi Park</h3>
@@ -135,7 +126,7 @@
             </div>
           </div>
 
-          <div class="place-card">
+          <div class="place-card" data-category="historic">
             <img
               src="assets/independence-square.jpg"
               alt="Independence Memorial Hall" />
@@ -148,7 +139,7 @@
             </div>
           </div>
 
-          <div class="place-card">
+          <div class="place-card" data-category="religious">
             <img src="assets/red-mosque.jpg" alt="Jami Ul-Alfar Mosque" />
             <div class="card-info">
               <h3>Jami Ul-Alfar Mosque</h3>
@@ -159,7 +150,7 @@
             </div>
           </div>
 
-          <div class="place-card">
+          <div class="place-card" data-category="shopping">
             <img
               src="assets/dutch-hospital.jpg"
               alt="Dutch Hospital Precinct" />
@@ -172,7 +163,7 @@
             </div>
           </div>
 
-          <div class="place-card">
+          <div class="place-card" data-category="religious">
             <img src="assets/seema-malaka.jpg" alt="Seema Malaka" />
             <div class="card-info">
               <h3>Seema Malaka</h3>
@@ -183,7 +174,7 @@
             </div>
           </div>
 
-          <div class="place-card">
+          <div class="place-card" data-category="nature">
             <img src="assets/mount-lavinia.jpg" alt="Mount Lavinia Beach" />
             <div class="card-info">
               <h3>Mount Lavinia Beach</h3>
@@ -194,7 +185,7 @@
             </div>
           </div>
 
-          <div class="place-card">
+          <div class="place-card" data-category="historic">
             <img
               src="assets/old-parliament.jpg"
               alt="Old Parliament Building" />
