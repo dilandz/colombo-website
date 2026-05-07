@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Find the perfect place to rest and recharge in Colombo. Discover top-rated hotels, cozy boutique stays, and the city's best dining spots. Plan your trip!" />
+    <title>Stay & Dine | Discover Colombo</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <!-- Global Navigation -->
+      <nav class="global-nav">
+        <div class="nav-links" id="nav-links">
+          <a href="index.html">
+            <i class="fa-solid fa-house"></i>
+            <span class="nav-text">Home</span>
+          </a>
+          <a href="places.html">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <span class="nav-text">Places</span>
+          </a>
+          <a href="malls.html">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="nav-text">Malls</span>
+          </a>
+          <a href="hospitality.html" class="active">
+            <i class="fa-solid fa-bed"></i>
+            <span class="nav-text">Hospitality</span>
+          </a>
+          <a href="restaurants.html">
+            <i class="fa-solid fa-utensils"></i>
+            <span class="nav-text">Dining</span>
+          </a>
+        </div>
+      </nav>
+      <header class="page-header">
+        <h1>Stay & Dine in Colombo</h1>
+        <p>
+          Experience world-class hospitality and the vibrant flavors of Sri
+          Lanka.
+        </p>
+      </header>
+
+      <main>
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="hotel">Hotels</button>
+          <button class="filter-btn" data-filter="fine-dining">Fine Dining</button>
+          <button class="filter-btn" data-filter="casual">Casual Eats</button>
+         
+        </div>
+
+        <div class="card-grid" id="places-grid">
+          <div class="place-card" data-category="hotel">
+            <img src="assets/galleface-hotel.jpg" alt="Galle Face Hotel" />
+            <div class="card-info">
+              <h3>Galle Face Hotel</h3>
+              <p>
+                A historic 19th-century colonial hotel offering ocean views and
+                timeless luxury.
+              </p>
+              <a
+                href="https://gallefacehotel.com/"
+                target="_blank"
+                class="card-link"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit
+                Website</a
+              >
+            </div>
+          </div>
+
+          <div class="place-card" data-category="hotel">
+            <img src="assets/shangri-la.png" alt="Shangri-La Colombo" />
+            <div class="card-info">
+              <h3>Shangri-La Colombo</h3>
+              <p>Ultra-modern luxury living with spectacular skyline views.</p>
+              <a
+                href="https://www.shangri-la.com/colombo/shangrila/"
+                target="_blank"
+                class="card-link"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit
+                Website</a
+              >
+            </div>
+          </div>
+
+          <div class="place-card" data-category="hotel">
+            <img src="assets/cinnamon-grand.jpg" alt="Cinnamon Grand" />
+            <div class="card-info">
+              <h3>Cinnamon Grand</h3>
+              <p>A premium resort-style hotel in the heart of the city.</p>
+              <a
+                href="https://www.cinnamonhotels.com/cinnamon-grand-colombo"
+                target="_blank"
+                class="card-link"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit
+                Website</a
+              >
+            </div>
+          </div>
+
+          <div class="place-card" data-category="hotel">
+            <img src="assets/marino-beach.jpg" alt="Marino Beach Hotel" />
+            <div class="card-info">
+              <h3>Marino Beach Hotel</h3>
+              <p>Features the longest rooftop infinity pool in Colombo.</p>
+              <a
+                href="https://www.marinobeach.com/"
+                target="_blank"
+                class="card-link"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit
+                Website</a
+              >
+            </div>
+          </div>
+
+          <div class="place-card" data-category="hotel">
+            <img src="assets/taj-samudra.jpg" alt="Taj Samudra" />
+            <div class="card-info">
+              <h3>Taj Samudra</h3>
+              <p>
+                Set across 11 acres of landscaped gardens facing the historic
+                Galle Face Green.
+              </p>
+              <a
+                href="https://www.tajhotels.com/en-in/taj/taj-samudra-colombo/"
+                target="_blank"
+                class="card-link"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit
+                Website</a
+              >
+            </div>
+          </div>
+
+          <div class="place-card" data-category="hotel">
+            <img src="assets/kingsbury.jpg" alt="The Kingsbury" />
+            <div class="card-info">
+              <h3>The Kingsbury</h3>
+              <p>
+                A stately, opulent hotel known for its incredible high tea and
+                rooftop bars.
+              </p>
+              <a
+                href="https://www.thekingsburyhotel.com/"
+                target="_blank"
+                class="card-link"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit
+                Website</a
+              >
+            </div>
+          </div>
+
+          <div class="place-card" data-category="hotel">
+            <img src="assets/cinnamon-red.jpg" alt="Cinnamon Red" />
+            <div class="card-info">
+              <h3>Cinnamon Red</h3>
+              <p>
+                A trendy, modern 'lean luxury' hotel with an iconic rooftop bar.
+              </p>
+              <a
+                href="https://www.cinnamonhotels.com/cinnamon-red-colombo"
+                target="_blank"
+                class="card-link"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit
+                Website</a
+              >
+            </div>
+          </div>
+
+          <div class="place-card" data-category="hotel">
+            <img src="assets/jetwing-colombo-seven.jpg" alt="Jetwing Colombo Seven" />
+            <div class="card-info">
+              <h3>Jetwing Colombo Seven</h3>
+              <p>
+                Located in the heart of Cinnamon Gardens with a stunning rooftop
+                infinity pool.
+              </p>
+              <a
+                href="https://www.jetwinghotels.com/jetwingcolomboseven/"
+                target="_blank"
+                class="card-link"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit
+                Website</a
+              >
+            </div>
+          </div>
+
+          <div class="place-card" data-category="hotel">
+            <img src="assets/granbell.jpg" alt="Granbell Hotel" />
+            <div class="card-info">
+              <h3>Granbell Hotel</h3>
+              <p>
+                A touch of Japanese hospitality infused with Sri Lankan warmth.
+              </p>
+              <a
+                href="https://granbellhotel.lk/"
+                target="_blank"
+                class="card-link"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit
+                Website</a
+              >
+            </div>
+          </div>
+
+          <div class="place-card" data-category="hotel">
+            <img src="assets/mandarina.jpg" alt="Mandarina Colombo" />
+            <div class="card-info">
+              <h3>Mandarina Colombo</h3>
+              <p>
+                A sleek, business-friendly hotel offering incredible views of
+                the city skyline.
+              </p>
+              <a
+                href="https://mandarinacolombo.com/"
+                target="_blank"
+                class="card-link"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit
+                Website</a
+              >
+            </div>
+          </div>
+
+          <div class="place-card" data-category="fine-dining">
+            <img src="assets/ministry-of-crab.jpg" alt="Ministry of Crab" />
+            <div class="card-info">
+              <h3>Ministry of Crab</h3>
+              <p>
+                Ranked among Asia's 50 Best Restaurants, famous for massive
+                lagoon crabs.
+              </p>
+              <a
+                href="https://www.ministryofcrab.com/colombo/"
+                target="_blank"
+                class="card-link"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit
+                Website</a
+              >
+            </div>
+          </div>
+
+          <div class="place-card" data-category="casual">
+            <img src="assets/upalis.jpg" alt="Upali's by Nawaloka" />
+            <div class="card-info">
+              <h3>Upali's by Nawaloka</h3>
+              <p>
+                Experience authentic, rich Sri Lankan curries in a comfortable
+                setting.
+              </p>
+              <a
+                href="https://upalis.com"
+                target="_blank"
+                class="card-link"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit
+                Website</a
+              >
+            </div>
+          </div>
+
+          <div class="place-card" data-category="fine-dining">
+            <img src="assets/gallery-cafe.jpg" alt="The Gallery Cafe" />
+            <div class="card-info">
+              <h3>The Gallery Cafe</h3>
+              <p>
+                A chic dining experience in Geoffrey Bawa's former architectural
+                office.
+              </p>
+              <a
+                href="https://www.paradiseroad.lk/content/7-The-Gallery-Cafe"
+                target="_blank"
+                class="card-link"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit
+                Website</a
+              >
+            </div>
+          </div>
+
+          <div class="place-card" data-category="fine-dining">
+            <img src="assets/nuga-gama.jpeg" alt="Nuga Gama" />
+            <div class="card-info">
+              <h3>Nuga Gama</h3>
+              <p>
+                A rural village dining experience built around a 200-year-old
+                Banyan tree.
+              </p>
+              <a
+                href="https://www.cinnamonhotels.com/cinnamon-grand-colombo/dine-with-us/nuga-gama"
+                target="_blank"
+                class="card-link"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit
+                Website</a
+              >
+            </div>
+          </div>
+
+          <div class="place-card" data-category="fine-dining">
+            <img src="assets/the-lagoon.jpg" alt="The Lagoon" />
+            <div class="card-info">
+              <h3>The Lagoon</h3>
+              <p>
+                Modeled after a lively seafood market, choose your catch and how
+                it is cooked.
+              </p>
+              <a
+                href="https://www.cinnamonhotels.com/cinnamon-grand-colombo/dine-with-us/the-lagoon"
+                target="_blank"
+                class="card-link"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit
+                Website</a
+              >
+            </div>
+          </div>
+
+          <div class="place-card" data-category="casual">
+            <img src="assets/nihonbashi.jpg" alt="Nihonbashi" />
+            <div class="card-info">
+              <h3>Nihonbashi</h3>
+              <p>
+                Authentic Japanese cuisine widely regarded as the best sushi in
+                Sri Lanka.
+              </p>
+              <a href="https://nihonbashi.lk/" target="_blank" class="card-link"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit
+                Website</a
+              >
+            </div>
+          </div>
+
+          <div class="place-card" data-category="casual">
+            <img src="assets/monsoon.jpg" alt="Monsoon Colombo" />
+            <div class="card-info">
+              <h3>Monsoon Colombo</h3>
+              <p>
+                A vibrant pan-Asian restaurant located in the trendy Park Street
+                Mews.
+              </p>
+              <a
+                href="https://www.instagram.com/monsooncolombo/"
+                target="_blank"
+                class="card-link"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit
+                Website</a
+              >
+            </div>
+          </div>
+
+          <div class="place-card" data-category="fine-dining">
+            <img src="assets/baillie.jpg" alt="Baillie Street Merchants" />
+            <div class="card-info">
+              <h3>Baillie Street Merchants</h3>
+              <p>
+                A hidden speakeasy and tapas bar offering a moody, vintage
+                atmosphere.
+              </p>
+              <a
+                href="https://www.facebook.com/bailliestreet.merchants/"
+                target="_blank"
+                class="card-link"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i> Visit
+                Website</a
+              >
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- Global Footer -->
+      <footer>
+        <p>
+          &copy; 2026 Discover Colombo. Built for TECH4200. By Dilan De Zilva
+        </p>
+      </footer>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
