@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Need help planning your Colombo itinerary? Reach out to us for local travel advice, feedback, or business inquiries. Drop us a message today!" />
+    <title>Contact Us | Discover Colombo</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <!-- Global Navigation -->
+      <nav class="global-nav">
+        <div class="nav-links" id="nav-links">
+          <a href="index.html">
+            <i class="fa-solid fa-house"></i>
+            <span class="nav-text">Home</span>
+          </a>
+          <a href="places.html">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <span class="nav-text">Places</span>
+          </a>
+          <a href="malls.html">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="nav-text">Malls</span>
+          </a>
+          <a href="hospitality.html">
+            <i class="fas fa-hotel"></i>
+            <span class="nav-text">Hospitality</span>
+          </a>
+          <a href="contact.html" class="active">
+            <i class="fa-solid fa-envelope"></i>
+            <span class="nav-text">Contact</span>
+          </a>
+        </div>
+      </nav>
+
+      <header class="page-header">
+        <h1>Get In Touch</h1>
+        <p>
+          Don't know where to visit in Colombo? Send us a message! We'll plan
+          your visit.
+        </p>
+      </header>
+
+      <main>
+        <div class="contact-layout">
+          <div class="contact-form-container">
+            <h2>Send a Message</h2>
+
+            <form id="contact-form">
+              <div class="input-group">
+                <label for="name"
+                  >Full Name <span class="required-asterisk">*</span></label
+                >
+                <input type="text" id="name" placeholder="John Doe" />
+                <small class="error-text hidden" id="name-error-message"
+                  >Full Name is required.</small
+                >
+              </div>
+
+              <div class="input-group">
+                <label for="email"
+                  >Email Address <span class="required-asterisk">*</span></label
+                >
+                <input type="email" id="email" placeholder="john@example.com" />
+                <small class="error-text hidden" id="email-error-message"
+                  >Please enter a valid email.</small
+                >
+              </div>
+
+              <div class="input-group">
+                <label for="message"
+                  >Your Message <span class="required-asterisk">*</span></label
+                >
+                <textarea
+                  id="message"
+                  rows="5"
+                  class="form-textarea"
+                  placeholder="How can we help you?"></textarea>
+                <small class="error-text hidden" id="error-message"
+                  >Message cannot be empty.</small
+                >
+              </div>
+
+              <button type="submit" class="cta-button form-submit-btn">
+                Send Message
+              </button>
+            </form>
+
+            <div id="success-message" class="success-message hidden">
+              <i class="fa-solid fa-circle-check"></i> Thank you! Your message
+              has been sent.
+            </div>
+          </div>
+
+          <div class="contact-info">
+            <div class="info-card">
+              <h3>
+                <i class="fa-solid fa-location-dot"></i> Discover Colombo Center
+              </h3>
+              <p>123 Galle Road,<br />Colombo 03,<br />Sri Lanka</p>
+            </div>
+
+            <div class="info-card">
+              <h3><i class="fa-solid fa-phone"></i> Contact Details</h3>
+              <p><b>Phone:</b> +94 11 234 5678</p>
+              <p style="color: #555"><b>Email:</b> info@discovercolombo.lk</p>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Global Footer -->
+      <footer>
+        <p>
+          &copy; 2026 Discover Colombo. Built for TECH4200. By Dilan De Zilva
+        </p>
+      </footer>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

@@ -33,9 +33,9 @@
             <i class="fas fa-hotel"></i>
             <span class="nav-text">Hospitality</span>
           </a>
-          <a href="restaurants.html">
-            <i class="fa-solid fa-utensils"></i>
-            <span class="nav-text">Dining</span>
+          <a href="contact.html">
+            <i class="fa-solid fa-envelope"></i>
+            <span class="nav-text">Contact</span>
           </a>
         </div>
       </nav>
@@ -48,16 +48,16 @@
       </header>
 
       <main>
-        <div class="filter-buttons">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="hotel">Hotels</button>
-          <button class="filter-btn" data-filter="fine-dining">Fine Dining</button>
-          <button class="filter-btn" data-filter="casual">Casual Eats</button>
+        <div class="category-button">
+          <button class="category-btn active" category-filter="all">All</button>
+          <button class="category-btn" category-filter="hotel">Hotels</button>
+          <button class="category-btn" category-filter="fine-dining">Fine Dining</button>
+          <button class="category-btn" category-filter="casual">Casual Eats</button>
          
         </div>
 
         <div class="card-grid" id="places-grid">
-          <div class="place-card" data-category="hotel">
+          <div class="place-card" category-type="hotel">
             <img src="assets/galleface-hotel.jpg" alt="Galle Face Hotel" />
             <div class="card-info">
               <h3>Galle Face Hotel</h3>
@@ -75,7 +75,7 @@
             </div>
           </div>
 
-          <div class="place-card" data-category="hotel">
+          <div class="place-card" category-type="hotel">
             <img src="assets/shangri-la.png" alt="Shangri-La Colombo" />
             <div class="card-info">
               <h3>Shangri-La Colombo</h3>
@@ -90,7 +90,7 @@
             </div>
           </div>
 
-          <div class="place-card" data-category="hotel">
+          <div class="place-card" category-type="hotel">
             <img src="assets/cinnamon-grand.jpg" alt="Cinnamon Grand" />
             <div class="card-info">
               <h3>Cinnamon Grand</h3>
@@ -105,7 +105,7 @@
             </div>
           </div>
 
-          <div class="place-card" data-category="hotel">
+          <div class="place-card" category-type="hotel">
             <img src="assets/marino-beach.jpg" alt="Marino Beach Hotel" />
             <div class="card-info">
               <h3>Marino Beach Hotel</h3>
@@ -120,7 +120,7 @@
             </div>
           </div>
 
-          <div class="place-card" data-category="hotel">
+          <div class="place-card" category-type="hotel">
             <img src="assets/taj-samudra.jpg" alt="Taj Samudra" />
             <div class="card-info">
               <h3>Taj Samudra</h3>
@@ -138,7 +138,7 @@
             </div>
           </div>
 
-          <div class="place-card" data-category="hotel">
+          <div class="place-card" category-type="hotel">
             <img src="assets/kingsbury.jpg" alt="The Kingsbury" />
             <div class="card-info">
               <h3>The Kingsbury</h3>
@@ -156,7 +156,7 @@
             </div>
           </div>
 
-          <div class="place-card" data-category="hotel">
+          <div class="place-card" category-type="hotel">
             <img src="assets/cinnamon-red.jpg" alt="Cinnamon Red" />
             <div class="card-info">
               <h3>Cinnamon Red</h3>
@@ -173,7 +173,7 @@
             </div>
           </div>
 
-          <div class="place-card" data-category="hotel">
+          <div class="place-card" category-type="hotel">
             <img src="assets/jetwing-colombo-seven.jpg" alt="Jetwing Colombo Seven" />
             <div class="card-info">
               <h3>Jetwing Colombo Seven</h3>
@@ -191,7 +191,7 @@
             </div>
           </div>
 
-          <div class="place-card" data-category="hotel">
+          <div class="place-card" category-type="hotel">
             <img src="assets/granbell.jpg" alt="Granbell Hotel" />
             <div class="card-info">
               <h3>Granbell Hotel</h3>
@@ -208,7 +208,7 @@
             </div>
           </div>
 
-          <div class="place-card" data-category="hotel">
+          <div class="place-card" category-type="hotel">
             <img src="assets/mandarina.jpg" alt="Mandarina Colombo" />
             <div class="card-info">
               <h3>Mandarina Colombo</h3>
@@ -226,7 +226,7 @@
             </div>
           </div>
 
-          <div class="place-card" data-category="fine-dining">
+          <div class="place-card" category-type="fine-dining">
             <img src="assets/ministry-of-crab.jpg" alt="Ministry of Crab" />
             <div class="card-info">
               <h3>Ministry of Crab</h3>
@@ -244,7 +244,7 @@
             </div>
           </div>
 
-          <div class="place-card" data-category="casual">
+          <div class="place-card" category-type="casual">
             <img src="assets/upalis.jpg" alt="Upali's by Nawaloka" />
             <div class="card-info">
               <h3>Upali's by Nawaloka</h3>
@@ -262,7 +262,7 @@
             </div>
           </div>
 
-          <div class="place-card" data-category="fine-dining">
+          <div class="place-card" category-type="fine-dining">
             <img src="assets/gallery-cafe.jpg" alt="The Gallery Cafe" />
             <div class="card-info">
               <h3>The Gallery Cafe</h3>
@@ -280,7 +280,7 @@
             </div>
           </div>
 
-          <div class="place-card" data-category="fine-dining">
+          <div class="place-card" category-type="fine-dining">
             <img src="assets/nuga-gama.jpeg" alt="Nuga Gama" />
             <div class="card-info">
               <h3>Nuga Gama</h3>
@@ -298,7 +298,7 @@
             </div>
           </div>
 
-          <div class="place-card" data-category="fine-dining">
+          <div class="place-card" category-type="fine-dining">
             <img src="assets/the-lagoon.jpg" alt="The Lagoon" />
             <div class="card-info">
               <h3>The Lagoon</h3>
@@ -316,7 +316,7 @@
             </div>
           </div>
 
-          <div class="place-card" data-category="casual">
+          <div class="place-card" category-type="casual">
             <img src="assets/nihonbashi.jpg" alt="Nihonbashi" />
             <div class="card-info">
               <h3>Nihonbashi</h3>
@@ -331,7 +331,7 @@
             </div>
           </div>
 
-          <div class="place-card" data-category="casual">
+          <div class="place-card" category-type="casual">
             <img src="assets/monsoon.jpg" alt="Monsoon Colombo" />
             <div class="card-info">
               <h3>Monsoon Colombo</h3>
@@ -349,7 +349,7 @@
             </div>
           </div>
 
-          <div class="place-card" data-category="fine-dining">
+          <div class="place-card" category-type="fine-dining">
             <img src="assets/baillie.jpg" alt="Baillie Street Merchants" />
             <div class="card-info">
               <h3>Baillie Street Merchants</h3>

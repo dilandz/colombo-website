@@ -20,10 +20,10 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
-    // This function gets the current time using the date method and based on
+    // This function gets the current time using the in build date method and based on
     // the specific time it displays the greeting message
     function displayGreeting() {
-      // Get the current date and time method
+      
       const dateNow = new Date();
       const currentHour = dateNow.getHours();
       let greetingMessage = "";
@@ -47,37 +47,95 @@ document.addEventListener("DOMContentLoaded", () => {
     typeWriter();
   }
 
-  // Places Page JavaScript for Category Filter
-  const grid = document.getElementById("places-grid");
-  const filterButtons = document.querySelectorAll(".filter-btn");
 
-  if (grid && filterButtons.length > 0) {
-    // Grab all the cards
+  // This code below perform the sorting filter based on the categories on the places page 
+  // and hospitality page. It takes the users selected category as the input and sort 
+  // the place card accordingly and display. 
+  const grid = document.getElementById("places-grid");
+  const categoryButtons = document.querySelectorAll(".category-btn");
+
+  if (grid && categoryButtons.length > 0) {
     let cards = document.querySelectorAll(".place-card");
 
-    // Listen for clicks on any filter button
-    filterButtons.forEach((button) => {
+    categoryButtons.forEach((button) => {
       button.addEventListener("click", () => {
-        // 1. Visual update: Move the orange 'active' color to the clicked button
-        filterButtons.forEach((btn) => btn.classList.remove("active"));
+        
+        // This part remove the active state from the current selected category 
+        // and put into new selected category.
+        categoryButtons.forEach((btn) => btn.classList.remove("active"));
         button.classList.add("active");
+        const currentFilter = button.getAttribute("category-filter");
 
-        // 2. Logic: Find out which category was clicked
-        const currentFilter = button.getAttribute("data-filter");
-
-        // 3. Filter: Loop through every card to see if it matches
+        // Loops through all the cards on the pages and hidden the ones 
+        // that does not match the category type.
         cards.forEach((card) => {
-          const category = card.getAttribute("data-category");
-
-          // If filter is 'all' OR it matches the card's category, show it
+          const category = card.getAttribute("category-type");
           if (currentFilter === "all" || currentFilter === category) {
             card.classList.remove("hidden");
           } else {
-            // Otherwise, hide it
             card.classList.add("hidden");
           }
         });
       });
+    });
+  }
+
+  // This function performs the contact form validation by take the user inputs. 
+  // If user enter invalid input is display in red showing the error message after 
+  // a success full submission it will display user a success message.
+  const contactForm = document.getElementById("contact-form");
+
+  if (contactForm) {
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault(); 
+      let valid = true;
+
+      const userName = document.getElementById("name");
+      const nameErrorMessage = document.getElementById("name-error-message");
+
+      const userEmail = document.getElementById("email");
+      const emailErrorMessage = document.getElementById("email-error-message");
+
+      const userMessage = document.getElementById("message");
+      const meesageErrorMessage = document.getElementById("error-message");
+
+      // Validate the name and make sure its not empty
+      if (userName.value.trim() === "") {
+        nameErrorMessage.classList.remove("hidden");
+        userName.style.borderColor = "red";
+        valid = false;
+      } else {
+        nameErrorMessage.classList.add("hidden");
+        userName.style.borderColor = "#d3d1d1";
+      }
+
+      // Validate the email using Regex check for only letters, numbers,
+      // dots, dashes, and a 2-to-6 letter domain (like .com or .com.au)
+      const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+      if (!emailRegex.test(userEmail.value.trim())) {
+        emailErrorMessage.classList.remove("hidden");
+        userEmail.style.borderColor = "red";
+        valid = false;
+      } else {
+        emailErrorMessage.classList.add("hidden");
+        userEmail.style.borderColor = "#d3d1d1";
+      }
+
+      // Validate the user message to make sure its not empty
+      if (userMessage.value.trim() === "") {
+        meesageErrorMessage.classList.remove("hidden");
+        userMessage.style.borderColor = "red";
+        valid = false;
+      } else {
+        meesageErrorMessage.classList.add("hidden");
+        userMessage.style.borderColor = "#e0e0e0";
+      }
+
+      // If all the above validation passes, it displays user success message
+      if (valid) {
+        contactForm.style.display = "none"; 
+        document.getElementById("success-message").classList.remove("hidden");
+      }
     });
   }
 });
