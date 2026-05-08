@@ -35,7 +35,7 @@ main {
   flex: 1;
 }
 
-/* --- Global Navbar --- */
+/* -- Global Navbar -- */
 .global-nav {
   background-color: #ffffff;
   width: 80%;
@@ -68,14 +68,13 @@ main {
     color 0.3s ease;
 }
 
-/* When hover over the text or icon color changes and shows the active page highlighted */
 .nav-links a:hover,
 .nav-links a.active {
   background-color: #ff6600;
   color: #ffffff;
 }
 
-/* --- Hero Section --- */
+/* -- Hero Section -- */
 .hero-section {
   height: 95vh;
   background-image:
@@ -108,7 +107,6 @@ main {
   color: #cccccc;
 }
 
-/* Buttons */
 .cta-button {
   background-color: #ff6600;
   color: #ffffff;
@@ -125,7 +123,7 @@ main {
   background-color: #cc5200;
 }
 
-/* --- Stats Section --- */
+/* -- Stats Section -- */
 .stats-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -161,7 +159,7 @@ main {
   letter-spacing: 1px;
 }
 
-/* --- Intro Section --- */
+/* -- Intro Section -- */
 .intro-section {
   background-color: #ffffff;
   padding: 60px 20px;
@@ -205,7 +203,7 @@ main {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* --- List Section --- */
+/* -- List Section -- */
 .list-section {
   display: flex;
   gap: 40px;
@@ -229,7 +227,6 @@ main {
   padding-bottom: 10px;
 }
 
-/* Removing default bullets and adding custom ones */
 .custom-list {
   list-style: none;
   padding: 0;
@@ -243,7 +240,6 @@ main {
   line-height: 1.6;
 }
 
-/* The Custom Orange Arrow Trick */
 .custom-list li::before {
   content: "✓";
   position: absolute;
@@ -262,7 +258,7 @@ footer {
   font-size: 0.8rem;
 }
 
-/* -- Places Page CSS -- */
+/* -- Places Page -- */
 
 .category-button {
   display: flex;
@@ -296,7 +292,6 @@ footer {
   color: #ffffff;
 }
 
-/* Class added by JavaScript to hide cards that don't match the filter */
 .hidden {
   display: none !important;
 }
@@ -314,10 +309,9 @@ footer {
   margin-bottom: 10px;
 }
 
-/* --- Card Grid Layout --- */
+/* -- Card Grid Layout -- */
 .card-grid {
   display: grid;
-  /* Fits as many 300px cards as possible */
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
 }
@@ -375,7 +369,6 @@ footer {
   margin-bottom: 80px;
 }
 
-/* Flips the layout of every even-numbered row! */
 .mall-row:nth-child(even) {
   flex-direction: row-reverse;
 }
@@ -532,18 +525,17 @@ footer {
 }
 
 .info-card p {
-  color: #555;
+  color: #4d4c4c;
   margin-bottom: 10px;
   font-size: 1rem;
 }
 
-/* --- Mobile Responsiveness --- */
+/* -- Mobile Responsiveness CSS -- */
 @media (max-width: 768px) {
   body {
     padding-bottom: 80px;
   }
 
-  /* Fix the nav bar to the bottom of the screen */
   .global-nav {
     position: fixed;
     bottom: 0;
@@ -567,10 +559,6 @@ footer {
   .nav-links a i {
     font-size: 1.2rem;
   }
-
-  /* .nav-text {
-    display: none;
-  } */
 
   .hero-section {
     height: 65vh;
@@ -682,7 +670,7 @@ footer {
 
   .contact-form-container {
     padding: 30px 20px;
-    border-radius: 15px; 
+    border-radius: 15px;
   }
 
   .contact-form-container h2 {
@@ -709,5 +697,8 @@ footer {
   .input-group label {
     font-size: 0.65rem;
   }
- 
+
+  .success-message {
+    font-size: 0.8rem;
+  }
 }
