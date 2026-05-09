@@ -110,7 +110,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
 
       // Validate the email using Regex check for only letters, numbers,
-      // dots, dashes, and a 2-to-6 letter domain (like .com or .com.au)
+      // dots, dashes, and a 2-to-6 letter domain
       const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
       if (!emailRegex.test(userEmail.value.trim())) {
         emailErrorMessage.classList.remove("hidden");
