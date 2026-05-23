@@ -33,4 +33,4 @@ The images used in this project were sourced from various public image repositor
 *Note: As this is a student project, I am actively transitioning to using royalty-free and attributed assets. If you are the owner of an image used here and would like it credited or removed, please contact me and I will address it immediately.*
 
 ---
-*Built by Dilan De Zilva | Linkedin: (https://www.linkedin.com/in/dilandezilva/)*
+*Built by Dilan De Zilva | [Linkedin](https://www.linkedin.com/in/dilandezilva/)*
